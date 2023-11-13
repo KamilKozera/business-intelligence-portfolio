@@ -1,8 +1,18 @@
 --select data that I will be using
 
-SELECT location, date, total_cases, new_cases, total_deaths, population
-FROM portfolio..CovidDeaths
-ORDER BY 1, 2
+SELECT 
+	location, 
+	date, 
+	total_cases, 
+	new_cases, 
+	total_deaths, 
+	population
+FROM 
+	portfolio..CovidDeaths
+WHERE 
+	continent IS NOT NULL
+ORDER BY 
+	1, 2
 
 
 --calculate death percentage with handling null values
@@ -15,9 +25,12 @@ SELECT
 	total_cases,
 	total_deaths, 
 	FORMAT(total_deaths * 1.0 / NULLIF(total_cases, 0), 'P2') AS DeathPercentage
-FROM portfolio..CovidDeaths
-WHERE location = 'Poland'
-ORDER BY 1, 2
+FROM 
+	portfolio..CovidDeaths
+WHERE 
+	location = 'Poland' AND continent IS NOT NULL
+ORDER BY 
+	1, 2
 
 --calculate % of infected
 --shows what % of population got covid overall
@@ -30,9 +43,12 @@ SELECT
 	population,
 	FORMAT(total_cases/population, 'P3') AS InfectedPercentage,
 	FORMAT(total_cases/population - LAG(total_cases/population) OVER (PARTITION BY location ORDER BY date), 'P5') AS DailyChange
-FROM portfolio..CovidDeaths
-WHERE location = 'Poland'
-ORDER BY 1, 2
+FROM 
+	portfolio..CovidDeaths
+WHERE 
+	location = 'Poland' AND continent IS NOT NULL
+ORDER BY 
+	1, 2
 
 --calculate the total infected compared to country population
 
@@ -42,6 +58,8 @@ SELECT
 	ROUND(MAX(total_cases/population)* 100, 2)  AS PercentPopulationInfected
 FROM
 	portfolio..CovidDeaths
+WHERE
+	continent IS NOT NULL
 GROUP BY
 	location, population
 ORDER BY 
@@ -51,12 +69,49 @@ ORDER BY
 
 SELECT
 	location,
-	population,
-	ROUND(MAX(total_deaths/population)* 100, 2)  AS PercentPopulationDead
+	MAX(total_deaths) AS TotalDeathCount
 FROM
 	portfolio..CovidDeaths
+WHERE
+	location NOT LIKE '%income%' AND continent IS NOT NULL
 GROUP BY
-	location, population
+	location
 ORDER BY 
-	PercentPopulationDead DESC
+	TotalDeathCount DESC
+
+--break everything down by continent
+--Showing continents with the highest death counts
+
+SELECT
+	location,
+	MAX(total_deaths) AS TotalDeathCount
+FROM
+	portfolio..CovidDeaths
+WHERE
+	location NOT LIKE '%income%' AND continent IS NULL
+GROUP BY
+	location
+ORDER BY 
+	TotalDeathCount DESC
+
+-- GLOBAL NUMBERS
+
+SELECT
+	SUM(new_cases) AS TotalCases,
+	SUM(new_deaths) AS TotalDeaths,
+	SUM(new_deaths)/NULLIF(SUM(new_cases), 0) * 100 AS DeathPercentage
+FROM
+	portfolio..CovidDeaths
+WHERE 
+	continent IS NOT NULL
+
+--explore second table
+
+SELECT *
+FROM
+	portfolio..CovidVaccinations
+
+
+
+
 
