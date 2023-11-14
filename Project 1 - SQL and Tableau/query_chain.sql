@@ -105,13 +105,87 @@ FROM
 WHERE 
 	continent IS NOT NULL
 
---explore second table
+--total population vs vaccinations
 
-SELECT *
+SELECT dea.continent,
+	   dea.location, 
+	   dea.date, 
+	   dea.population,
+	   vac.new_vaccinations,
+	   SUM(CAST(vac.new_vaccinations AS BIGINT)) OVER (Partition by dea.location ORDER BY dea.location, dea.date) AS RollingPeopleVaccinated
 FROM
-	portfolio..CovidVaccinations
+	portfolio..CovidDeaths dea
+	JOIN portfolio..CovidVaccinations vac
+		ON dea.location = vac.location
+		AND dea.date = vac.date
+WHERE dea.continent IS NOT NULL
+ORDER BY 2, 3
 
+--USE CTE
 
+WITH PopvsVac (continent, location, date, population, new_vaccinations,RollingPeopleVaccinated)
+AS (
+	SELECT dea.continent,
+	   dea.location, 
+	   dea.date, 
+	   dea.population,
+	   vac.new_vaccinations,
+	   SUM(CAST(vac.new_vaccinations AS BIGINT)) OVER (Partition by dea.location ORDER BY dea.location, dea.date) AS RollingPeopleVaccinated
+	FROM
+		portfolio..CovidDeaths dea
+		JOIN portfolio..CovidVaccinations vac
+			ON dea.location = vac.location
+			AND dea.date = vac.date
+	WHERE dea.continent IS NOT NULL and dea.location = 'Poland'
+)
 
+SELECT *, (RollingPeopleVaccinated/population)*100
+FROM PopvsVac
+
+--TEMP TABLE
+
+DROP Table IF EXISTS #PercentPopulationVaccinated
+CREATE Table #PercentPopulationVaccinated
+(Continent nvarchar(255),
+location nvarchar(255),
+date datetime,
+population numeric,
+new_vaccinations numeric,
+RollingPeopleVaccinated numeric)
+
+INSERT INTO #PercentPopulationVaccinated
+SELECT dea.continent,
+	   dea.location, 
+	   dea.date, 
+	   dea.population,
+	   vac.new_vaccinations,
+	   SUM(CAST(vac.new_vaccinations AS BIGINT)) OVER (Partition by dea.location ORDER BY dea.location, dea.date) AS RollingPeopleVaccinated
+	FROM
+		portfolio..CovidDeaths dea
+		JOIN portfolio..CovidVaccinations vac
+			ON dea.location = vac.location
+			AND dea.date = vac.date
+	WHERE dea.continent IS NOT NULL
+
+SELECT *, (RollingPeopleVaccinated/population)*100
+FROM #PercentPopulationVaccinated
+ORDER BY 2, 3
+
+--Creating view to store data for Tableau visualization
+USE portfolio
+CREATE VIEW PercentPopulationVaccinated 
+AS
+	SELECT dea.continent,
+	   dea.location, 
+	   dea.date, 
+	   dea.population,
+	   vac.new_vaccinations,
+	   SUM(CAST(vac.new_vaccinations AS BIGINT)) OVER (Partition by dea.location ORDER BY dea.location, dea.date) AS RollingPeopleVaccinated
+	FROM
+		portfolio..CovidDeaths dea
+		JOIN portfolio..CovidVaccinations vac
+			ON dea.location = vac.location
+			AND dea.date = vac.date
+	WHERE dea.continent IS NOT NULL
 
 
