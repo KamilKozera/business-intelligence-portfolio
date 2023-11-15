@@ -36,4 +36,11 @@ This GitHub project is dedicated to the analysis and visualization of COVID-19 d
    │   ├── tableau_table_2.xlsx 
    │   ├── tableau_table_3.xlsx 
    │   ├── tableau_table_4.xlsx
+   │   ├── tableau_dashboard.png
 ```
+### Finished Dashboard
+
+My main aim in crafting this Tableau visualization was to convey the gravity of COVID-19 statistics while ensuring visual appeal. Overall, the goal was to present the severity of the situation in a clear, impactful, and considerate manner.
+
+![tableau_dashboard.png](https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%201%20-%20SQL%20and%20Tableau/TableauViz/tableau_dashboard.png)
+
