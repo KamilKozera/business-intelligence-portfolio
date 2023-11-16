@@ -8,19 +8,20 @@ Feel free to explore the various projects and code snippets available here. Whet
 
 If you have any questions or suggestions, don't hesitate to reach out. Collaboration is always welcome!
 
-## Tech Stack
+# Tech Stack
 ![Microsoft Excel](https://img.shields.io/badge/-Microsoft%20Excel-217346?logo=microsoft%20excel&logoColor=white&style=for-the-badge)
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge) ![MS SQL](https://img.shields.io/badge/-MS%20SQL-CC2927?logo=microsoft%20sql%20server&logoColor=white&style=for-the-badge) ![R](https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=for-the-badge) ![Tableau](https://img.shields.io/badge/-Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge) ![MS Power BI](https://img.shields.io/badge/-MS%20Power%20BI-F2C811?logo=power%20bi&logoColor=white&style=for-the-badge)
 
-## Table of Contents
+# Table of Contents
 <a href="#project-1-global-covid-19-data-exploration-and-tableau-visualisation">Project 1: Global COVID-19 Data Exploration and Tableau Visualisation</a>
+<a href="#project-2-exploratory-data-analysis-with-r">Project 2: Exploratory Data Analysis with R</a>
 
 
-## [Project 1: Global COVID-19 Data Exploration and Tableau Visualisation](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%201%20-%20SQL%20and%20Tableau)
+# [Project 1: Global COVID-19 Data Exploration and Tableau Visualisation](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%201%20-%20SQL%20and%20Tableau)
 
 This GitHub project is dedicated to the analysis and visualization of COVID-19 data using SQL queries. The SQL code provided covers a wide range of operations, from fundamental data selection to advanced calculations and aggregations. The primary goal is to extract meaningful insights into excel files and visualize them in Tableau public.
 
-### Project Structure
+## Project Structure
 
 ```
  Project 1 - SQL and Tableau 
@@ -38,18 +39,20 @@ This GitHub project is dedicated to the analysis and visualization of COVID-19 d
    │   ├── tableau_table_4.xlsx
    │   ├── tableau_dashboard.png
 ```
-### Finished Dashboard
+## Finished Dashboard
 
 My main aim in crafting this Tableau visualization was to convey the gravity of COVID-19 statistics while ensuring visual appeal. Overall, the goal was to present the severity of the situation in a clear, impactful, and considerate manner.
 
 ![tableau_dashboard.png](https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%201%20-%20SQL%20and%20Tableau/TableauViz/tableau_dashboard.png)
 
-Data Exploration with R
-================
-Kamil Kozera
+
+# [Project 2: Exploratory Data Analysis with R](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R)
+
+## Data Exploration with R
+Kamil Kozera <br>
 2023-11-16
 
-# Introduction
+## Introduction
 
 Bellabeat, founded by Urška Sršen and Sando Mur, pioneers high-tech
 health-focused smart products. Using beautifully designed technology,
@@ -94,7 +97,7 @@ to the Bellabeat executive team.
   goals, this membership provides holistic support for overall
   well-being.
 
-# Understanding the market
+## Understanding the market
 
 The [FitBit](https://www.kaggle.com/datasets/arashnic/fitbit) dataset
 provided by the stakeholder is a bit outdated because the data is from
@@ -131,7 +134,7 @@ decided to obtain additional data to assist me further.
 
 <img src="https://canalys-prod-public.s3.eu-west-1.amazonaws.com/cosi/campaign/3366/M7hmzR5p5_loIIKE_C15bcIv2uzFPmaV.jpg">
 
-# Data Cleaning
+## Data Cleaning
 
 This dataset was collected from 30 Fitbit users who willingly shared
 their fitness data through an online survey on Amazon Mechanical Turk
@@ -141,7 +144,7 @@ The variations in the data reflect the use of different Fitbit trackers
 and individual tracking habits, making it a valuable resource for
 understanding diverse fitness behaviors.
 
-## Importing the data
+### Importing the data
 
 I need to load specific libraries before I can study the data. These
 will help me understand the information better and find important
@@ -175,7 +178,7 @@ datasets <- lapply(flist, read_csv)
 names(datasets) <- gsub("_merged\\.csv", "", basename(flist))
 ```
 
-## Examining the data
+### Examining the data
 
 In the datasets analyzed, information is categorized by day, hour,
 minute, and second.
@@ -925,7 +928,7 @@ ggplot(daily_long, aes(x = Date, y = Id)) +
         strip.text = element_text(size = 15))
 ```
 
-![](data_exploration_with_r_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-17-1.png" />
 
 <br> The plots reveal that only 2 individuals consistently tracked their
 weight.
@@ -955,7 +958,7 @@ ggplot(sleep_long, aes(x = Date, y = Id)) +
           guides(color = guide_legend(override.aes = list(size = 3))) 
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-18-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-18-1.png" style="display: block; margin: auto;" />
 <br> The ‘Sleep Over Time’ plot presents a distinct scenario. Only 3
 individuals consistently recorded their sleep throughout the entire
 month. Among them, some tracked their sleep frequently, while others did
@@ -998,7 +1001,7 @@ intensities_plot2 <- ggplot(intensities_long, aes(x = Minutes, y = Distance)) +
 grid.arrange(intensities_plot1,intensities_plot2, ncol = 2)
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />
 <br> At first glance, the plots reveal outliers in the ‘VeryActive’ data
 and indicate a correlation between distance and time for each intensity
 level. The intensities also demonstrate daily fluctuations, which
@@ -1022,7 +1025,7 @@ theme(title = element_text(size = 20),
       axis.text.y = element_text(size = 15))
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-20-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-20-1.png" style="display: block; margin: auto;" />
 <br> As expected, minutes and distance intensities are positively
 correlated. For example, the more someone exercises lightly, the greater
 the distance they cover. Interestingly, the correlogram reveals a
@@ -1043,7 +1046,7 @@ ggplot(daily, aes(x = SedentaryMinutes, y = TotalMinutesAsleep)) +
         axis.title.x = element_text(size = 10))
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-21-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-21-1.png" style="display: block; margin: auto;" />
 <br> Higher sedentary minutes might indicate a less active lifestyle,
 which could potentially affect sleep patterns. Individuals with more
 sedentary behavior might find it harder to fall asleep or maintain a
@@ -1256,7 +1259,7 @@ calories_plot <- ggplot(daily_averages) +
 grid.arrange(steps_plot, calories_plot, ncol = 2)
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-27-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-27-1.png" style="display: block; margin: auto;" />
 <br> Average ‘TotalSteps per ID’ plot clearly shows that the averages
 vary significantly. Most people average at least a minimum of 4000 steps
 per day. Although the majority of people meet the minimum daily step
@@ -1324,7 +1327,7 @@ bmi_plot <- ggplot(daily_averages[complete.cases(daily_averages$BMI),]) +
 grid.arrange(weight_plot, bmi_plot, ncol = 2)
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-28-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-28-1.png" style="display: block; margin: auto;" />
 <br>
 
 ##### **Average Weight per ID**
@@ -1381,7 +1384,7 @@ activity_plot <- ggplot(activity_averages) +
 grid.arrange(sleep_plot, activity_plot, ncol = 2)
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-29-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-29-1.png" />
 
 ##### **Sleep per ID**
 
@@ -1434,7 +1437,7 @@ int_plot_hours <- ggplot(intensities_averages) +
 grid.arrange(int_plot_distance, int_plot_hours, ncol = 2)
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-30-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-30-1.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -1476,7 +1479,7 @@ ggplot() +
    guides(color = guide_legend(override.aes = list(size = 5)))
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-31-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-31-1.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -1581,7 +1584,7 @@ ggplot(daily_wday_avg) +
    guides(color = guide_legend(override.aes = list(size = 5)))
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-34-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-34-1.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -1611,7 +1614,7 @@ ggplot(daily_wday_avg) +
    guides(color = guide_legend(override.aes = list(size = 5)))
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-35-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-35-1.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -1643,7 +1646,7 @@ ggplot(sleep_wday_avg) +
   guides(color = guide_legend(override.aes = list(size = 5)))
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-36-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-36-1.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -1669,7 +1672,7 @@ ggplot(intensities_wday_avg) +
   guides(color = guide_legend(override.aes = list(size = 5)))
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-37-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-37-1.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -1697,7 +1700,7 @@ ggplot(intensities_wday_avg) +
   guides(color = guide_legend(override.aes = list(size = 5)))
 ```
 
-<img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-38-1.png" style="display: block; margin: auto;" />
+<img src="https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R/data_exploration_with_r_files/figure-gfm/unnamed-chunk-38-1.png" style="display: block; margin: auto;" />
 
 <br>
 
@@ -1708,7 +1711,7 @@ active activities and less than an hour in more intense activities.
 
 <br> <br>
 
-# Summary and Marketing Recommendations
+## Summary and Marketing Recommendations
 
 ### Summary
 
@@ -1771,7 +1774,7 @@ to draw meaningful conclusions or make confident recommendiations based
 on the data, as demonstrated by our observations with sleep and weight
 data.
 
-# Further analysis
+## Further analysis
 
 **1. Sample size**
 
