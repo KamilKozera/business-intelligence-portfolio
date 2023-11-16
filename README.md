@@ -13,8 +13,10 @@ If you have any questions or suggestions, don't hesitate to reach out. Collabora
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge) ![MS SQL](https://img.shields.io/badge/-MS%20SQL-CC2927?logo=microsoft%20sql%20server&logoColor=white&style=for-the-badge) ![R](https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=for-the-badge) ![Tableau](https://img.shields.io/badge/-Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge) ![MS Power BI](https://img.shields.io/badge/-MS%20Power%20BI-F2C811?logo=power%20bi&logoColor=white&style=for-the-badge)
 
 # Table of Contents
-<a href="#project-1-global-covid-19-data-exploration-and-tableau-visualisation">Project 1: Global COVID-19 Data Exploration and Tableau Visualisation</a>
-<a href="#project-2-exploratory-data-analysis-with-r">Project 2: Exploratory Data Analysis with R</a>
+1. <a href="#project-1-global-covid-19-data-exploration-and-tableau-visualisation">Project 1: Global COVID-19 Data Exploration and Tableau Visualisation</a>
+
+2. <a href="#project-2-exploratory-data-analysis-with-r">Project 2: Exploratory Data Analysis with R</a>
+
 
 
 # [Project 1: Global COVID-19 Data Exploration and Tableau Visualisation](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%201%20-%20SQL%20and%20Tableau)
