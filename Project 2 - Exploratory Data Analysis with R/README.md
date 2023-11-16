@@ -262,13 +262,6 @@ daily <- mutate_if(daily, is.integer, as.numeric)
 daily$Id <- as.character(daily$Id)
 ```
 
-<style>
-    .my-table {
-        border-collapse: separate;
-        border-spacing: 10px;
-    }
-</style>
-
 <div style="overflow-x: auto;">
 
 <table class="my-table">
@@ -1004,22 +997,11 @@ ggplot(daily, aes(x = SedentaryMinutes, y = TotalMinutesAsleep)) +
         axis.title.x = element_text(size = 10))
 ```
 
-    ## Warning: Removed 530 rows containing non-finite values (`stat_smooth()`).
-
-    ## Warning: Removed 530 rows containing missing values (`geom_point()`).
-
 <img src="data_exploration_with_r_files/figure-gfm/unnamed-chunk-21-1.png" style="display: block; margin: auto;" />
 <br> Higher sedentary minutes might indicate a less active lifestyle,
 which could potentially affect sleep patterns. Individuals with more
 sedentary behavior might find it harder to fall asleep or maintain a
 deep sleep, leading to a reduction in total time asleep. <br><br>
-
-<style>
-  /* Custom CSS styling for blockquote */
-  blockquote {
-    font-size: 14px; /* Adjust the font size as needed */
-  }
-</style>
 
 ### Health data
 
@@ -1234,7 +1216,7 @@ vary significantly. Most people average at least a minimum of 4000 steps
 per day. Although the majority of people meet the minimum daily step
 requirement, there is still considerable room for improvement to reach
 the recommended ideal step count of 10000 steps per day.
-
+<br>
 Based on the “Average Calories per ID” graph, most of the users are
 within the recommended calorie range, with a couple of users falling
 below and above the recommended range. After comparing the charts side
