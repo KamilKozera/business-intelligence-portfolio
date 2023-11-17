@@ -14,9 +14,10 @@ If you have any questions or suggestions, don't hesitate to reach out. Collabora
 
 # Table of Contents
 1. <a href="#project-1-global-covid-19-data-exploration-and-tableau-visualisation">Project 1: Global COVID-19 Data Exploration and Tableau Visualisation</a>
-
+>This GitHub project is dedicated to the analysis and visualization of COVID-19 data using SQL queries. The SQL code provided covers a wide range of operations, from fundamental data selection to advanced calculations and aggregations. The primary goal is to extract  meaningful insights into excel files and visualize them in Tableau public.
+ 
 2. <a href="#project-2-exploratory-data-analysis-with-r">Project 2: Exploratory Data Analysis with R</a>
-
+>In this analysis, I delve into consumer usage patterns of Bellabeat's smart devices, aiming to shape the company's marketing strategy. The project includes insights derived from user data, market research, and recommendations for targeted marketing initiatives. Due to the limitations of GitHub's README file, I did my best to include the entirety of the project here, although some charts do not look as they are supposed to. Regarding this project, for a better viewing experience, Kaggle is the best shot we have. [Click this link to move to Kaggle](https://www.kaggle.com/code/kamilkozera/google-capstone-project-with-r-bellabeat).
 
 
 # [Project 1: Global COVID-19 Data Exploration and Tableau Visualisation](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%201%20-%20SQL%20and%20Tableau)
@@ -41,15 +42,50 @@ This GitHub project is dedicated to the analysis and visualization of COVID-19 d
    │   ├── tableau_table_4.xlsx
    │   ├── tableau_dashboard.png
 ```
+## Dataset
+
+The dataset used in this project contains historical COVID-19 data from [https://ourworldindata.org](https://ourworldindata.org/covid-deaths) which is updated daily. The dataset includes information such as iso_code, date, continent, location, new cases, new deaths, total cases, total deaths and more. Visit ourworldindata.org to learn more.
+
+## Database
+To facilitate data management and analysis, a MS SQL database has been created to store the dataset. SQL provides a robust and efficient way to query and manipulate the data. The database schema has been designed to ensure proper organization and ease of use. 
+
+## Data Processing
+The data obtained from the ourworldindata.org website might require some preprocessing to clean and transform it into a suitable format for analysis. SQL queries have been utilized to clean, filter, and transform the data as necessary. This ensures that the data used for the dashboard is accurate and reliable.
+
 ## Finished Dashboard
 
-My main aim in crafting this Tableau visualization was to convey the gravity of COVID-19 statistics while ensuring visual appeal. Overall, the goal was to present the severity of the situation in a clear, impactful, and considerate manner.
+My main aim in crafting this Tableau visualization was to convey the gravity of COVID-19 statistics while ensuring visual appeal. Overall, the goal was to present the severity of the situation in a clear, impactful, and considerate manner. Click the image to see extended view.
 
 ![tableau_dashboard.png](https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%201%20-%20SQL%20and%20Tableau/TableauViz/tableau_dashboard.png)
 
 
 # [Project 2: Exploratory Data Analysis with R](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R)
 
+In this analysis, I delve into consumer usage patterns of Bellabeat's smart devices, aiming to shape the company's marketing strategy. The project includes insights derived from user data, market research, and recommendations for targeted marketing initiatives. Due to the limitations of GitHub's README file, I did my best to include the entirety of the project here, although some charts do not look as they are supposed to. Regarding this project, for a better viewing experience, Kaggle is the best shot we have. [Click this link to move to Kaggle](https://www.kaggle.com/code/kamilkozera/google-capstone-project-with-r-bellabeat).
+
+## Project Structure
+```
+├── Project 2 - Exploratory Data Analysis with R 
+│   ├── data_exploration_with_r.Rmd 
+│   ├── README.md 
+│   ├── data_exploration_with_r_files 
+│   │   ├── figure-gfm 
+│   │   │   ├── unnamed-chunk-17-1.png 
+│   │   │   ├── unnamed-chunk-18-1.png 
+│   │   │   ├── unnamed-chunk-19-1.png 
+│   │   │   ├── unnamed-chunk-20-1.png 
+│   │   │   ├── unnamed-chunk-21-1.png 
+│   │   │   ├── unnamed-chunk-27-1.png 
+│   │   │   ├── unnamed-chunk-28-1.png 
+│   │   │   ├── unnamed-chunk-29-1.png   <- plots saved to .png format
+│   │   │   ├── unnamed-chunk-30-1.png 
+│   │   │   ├── unnamed-chunk-31-1.png 
+│   │   │   ├── unnamed-chunk-34-1.png 
+│   │   │   ├── unnamed-chunk-35-1.png 
+│   │   │   ├── unnamed-chunk-36-1.png 
+│   │   │   ├── unnamed-chunk-37-1.png 
+│   │   │   ├── unnamed-chunk-38-1.png
+```
 ## Data Exploration with R
 Kamil Kozera <br>
 2023-11-16
