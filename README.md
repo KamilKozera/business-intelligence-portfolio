@@ -59,6 +59,7 @@ My main aim in crafting this Tableau visualization was to convey the gravity of 
 ![tableau_dashboard.png](https://github.com/KamilKozera/business-intelligence-portfolio/blob/main/Project%201%20-%20SQL%20and%20Tableau/TableauViz/tableau_dashboard.png)
 
 
+
 # [Project 2: Exploratory Data Analysis with R](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%202%20-%20Exploratory%20Data%20Analysis%20with%20R)
 
 In this analysis, I delve into consumer usage patterns of Bellabeat's smart devices, aiming to shape the company's marketing strategy. The project includes insights derived from user data, market research, and recommendations for targeted marketing initiatives. Due to the limitations of GitHub's README file, I did my best to include the entirety of the project here, although some charts do not look as they are supposed to. Regarding this project, for a better viewing experience, Kaggle is the best shot we have. [Click this link to move to Kaggle](https://www.kaggle.com/code/kamilkozera/google-capstone-project-with-r-bellabeat).
