@@ -10,7 +10,8 @@ If you have any questions or suggestions, don't hesitate to reach out. Collabora
 
 # Tech Stack
 ![Microsoft Excel](https://img.shields.io/badge/-Microsoft%20Excel-217346?logo=microsoft%20excel&logoColor=white&style=for-the-badge)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge) ![MS SQL](https://img.shields.io/badge/-MS%20SQL-CC2927?logo=microsoft%20sql%20server&logoColor=white&style=for-the-badge) ![R](https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=for-the-badge) ![Tableau](https://img.shields.io/badge/-Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge) ![MS Power BI](https://img.shields.io/badge/-MS%20Power%20BI-F2C811?logo=power%20bi&logoColor=white&style=for-the-badge)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge) ![MS SQL](https://img.shields.io/badge/-MS%20SQL-CC2927?logo=microsoft%20sql%20server&logoColor=white&style=for-the-badge) ![SQLite](https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=for-the-badge) ![R](https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=for-the-badge) ![Tableau](https://img.shields.io/badge/-Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge) ![MS Power BI](https://img.shields.io/badge/-MS%20Power%20BI-F2C811?logo=power%20bi&logoColor=white&style=for-the-badge) 
+
 
 # Table of Contents
 1. <a href="#project-1-global-covid-19-data-exploration-and-tableau-visualisation">Project 1: Global COVID-19 Data Exploration and Tableau Visualisation</a>
@@ -18,6 +19,9 @@ If you have any questions or suggestions, don't hesitate to reach out. Collabora
  
 2. <a href="#project-2-exploratory-data-analysis-with-r">Project 2: Exploratory Data Analysis with R</a>
 >In this analysis, I delve into consumer usage patterns of Bellabeat's smart devices, aiming to shape the company's marketing strategy. The project includes insights derived from user data, market research, and recommendations for targeted marketing initiatives. Due to the limitations of GitHub's README file, I did my best to include the entirety of the project here, although some charts do not look as they are supposed to. Regarding this project, for a better viewing experience, Kaggle is the best shot we have. [Click this link to move to Kaggle](https://www.kaggle.com/code/kamilkozera/google-capstone-project-with-r-bellabeat).
+
+3. <a href="#project-3-cs50-sql-relational-database-quering">Project 3: CS50 SQL Relational Database Quering</a>
+>This GitHub project is centered around developing SQL querying skills, particularly in the context of relational databases. The focus is on exploring and manipulating datasets related to educational systems in Massachusetts, baseball and package delivery data. The SQL queries showcase a spectrum of abilities, ranging from basic data retrieval to complex analyses involving multiple tables. Through this project, I've acquired proficiency in formulating queries for tasks such as filtering, joining tables, utilizing subqueries, handling NULL values, and performing aggregate functions. The skills demonstrated here lay a foundation for effective data analysis and interpretation in relational database environments.
 
 
 # [Project 1: Global COVID-19 Data Exploration and Tableau Visualisation](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%201%20-%20SQL%20and%20Tableau)
@@ -29,18 +33,18 @@ This GitHub project is dedicated to the analysis and visualization of COVID-19 d
 ```
  Project 1 - SQL and Tableau 
    ├── Datasets 
-   │   ├── CovidDeaths.xlsx 
-   │   ├── CovidVaccinations.xlsx 
-   │   ├── covid_dataset.csv 
+       ├── CovidDeaths.xlsx 
+       ├── CovidVaccinations.xlsx 
+       ├── covid_dataset.csv 
    ├── SQL-queries 
-   │   ├── sql_exploration.sql 
-   │   ├── tableau_queries.sql 
+       ├── sql_exploration.sql 
+       ├── tableau_queries.sql 
    ├── TableauViz 
-   │   ├── tableau_table_1.xlsx 
-   │   ├── tableau_table_2.xlsx 
-   │   ├── tableau_table_3.xlsx 
-   │   ├── tableau_table_4.xlsx
-   │   ├── tableau_dashboard.png
+       ├── tableau_table_1.xlsx 
+       ├── tableau_table_2.xlsx 
+       ├── tableau_table_3.xlsx 
+       ├── tableau_table_4.xlsx
+       ├── tableau_dashboard.png
 ```
 ## Dataset
 
@@ -67,25 +71,25 @@ In this analysis, I delve into consumer usage patterns of Bellabeat's smart devi
 ## Project Structure
 ```
 ├── Project 2 - Exploratory Data Analysis with R 
-│   ├── data_exploration_with_r.Rmd 
-│   ├── README.md 
-│   ├── data_exploration_with_r_files 
-│   │   ├── figure-gfm 
-│   │   │   ├── unnamed-chunk-17-1.png 
-│   │   │   ├── unnamed-chunk-18-1.png 
-│   │   │   ├── unnamed-chunk-19-1.png 
-│   │   │   ├── unnamed-chunk-20-1.png 
-│   │   │   ├── unnamed-chunk-21-1.png 
-│   │   │   ├── unnamed-chunk-27-1.png 
-│   │   │   ├── unnamed-chunk-28-1.png 
-│   │   │   ├── unnamed-chunk-29-1.png   <- plots saved to .png format
-│   │   │   ├── unnamed-chunk-30-1.png 
-│   │   │   ├── unnamed-chunk-31-1.png 
-│   │   │   ├── unnamed-chunk-34-1.png 
-│   │   │   ├── unnamed-chunk-35-1.png 
-│   │   │   ├── unnamed-chunk-36-1.png 
-│   │   │   ├── unnamed-chunk-37-1.png 
-│   │   │   ├── unnamed-chunk-38-1.png
+    ├── data_exploration_with_r.Rmd 
+    ├── README.md 
+    ├── data_exploration_with_r_files 
+        ├── figure-gfm 
+            ├── unnamed-chunk-17-1.png 
+            ├── unnamed-chunk-18-1.png 
+            ├── unnamed-chunk-19-1.png 
+            ├── unnamed-chunk-20-1.png 
+            ├── unnamed-chunk-21-1.png 
+            ├── unnamed-chunk-27-1.png 
+            ├── unnamed-chunk-28-1.png 
+            ├── unnamed-chunk-29-1.png   <- plots saved to .png format
+            ├── unnamed-chunk-30-1.png 
+            ├── unnamed-chunk-31-1.png 
+            ├── unnamed-chunk-34-1.png 
+            ├── unnamed-chunk-35-1.png 
+            ├── unnamed-chunk-36-1.png 
+            ├── unnamed-chunk-37-1.png 
+            ├── unnamed-chunk-38-1.png
 ```
 ## Data Exploration with R
 Kamil Kozera <br>
@@ -1843,4 +1847,223 @@ health and fitness experts, yoga instructors, nutritionists, and
 wellness influencers to introduce their products to the targeted
 audience.
 
+# [Project 3: CS50 SQL Relational Database Quering](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%203%20-%20CS50%20SQL%20Relational%20Database%20Quering)
+
+## Project Structure
+
+```
+Project 3 - CS50 SQL Relational Database Quering 
+ ├── dese 
+     ├── 1.sql 
+     ├── 2.sql 
+     ├── 3.sql 
+     ├── 4.sql 
+     ├── 5.sql 
+     ├── 6.sql 
+     ├── 7.sql 
+     ├── 8.sql 
+     ├── 9.sql 
+     ├── 10.sql 
+     ├── 11.sql 
+     ├── 12.sql 
+     ├── 13.sql 
+     ├── dese.db 
+ ├── moneyball 
+     ├── 1.sql 
+     ├── 2.sql 
+     ├── 3.sql 
+     ├── 4.sql 
+     ├── 5.sql 
+     ├── 6.sql 
+     ├── 7.sql 
+     ├── 8.sql 
+     ├── 9.sql 
+     ├── 10.sql 
+     ├── 11.sql 
+     ├── 12.sql 
+     ├── moneyball.db 
+ ├── packages 
+     ├── answers.txt 
+     ├── log.sql 
+     ├── packages.db 
+```
+
+## Datasets
+
+**1. Dese.db overview:**
+
+      - Stored in: "dese.db" database
+      - Focus: Educational information in Massachusetts
+
+**Purpose:**
+
+      - Offers a comprehensive view of educational systems, covering districts, schools, 
+        student outcomes, financial allocations, and staff performance evaluations in Massachusetts.
+
+**Tables:**
+
+Districts table:
+
+      - Captures district details
+      - Includes ID, name, type, city, state, and ZIP Code
+      
+Schools table:
+
+      - Encompasses school-specific data
+      - Includes ID, district ID, name, type, city, state, and ZIP Code
+     
+Graduation_rates table:
+   
+      - Provides information on graduation rates
+      - Includes ID, school ID, graduated, dropped, and excluded percentages
+        
+Expenditures table:
+   
+      - Focuses on financial data for districts
+      - Includes ID, district ID, number of pupils, and per-pupil expenditure
+     
+Staff_evaluations table:
+   
+      - Contains staff evaluation details
+      - Includes ID, district ID, evaluated, exemplary, proficient, needs improvement, and unsatisfactory percentages
+
+**2. Packages.db overview:**
+
+      - Stored in: "packages.db" database
+      - Focus: Mail delivery service operations
+
+**Purpose:**
+
+      - Provides structured representation of mail delivery service operations.
+      - Enables analysis and tracking of packages, including their contents, origins, 
+        destinations, and the actions taken by drivers during the delivery process.
+
+**Tables:**
+
+Addresses table:
+
+      - Captures address details
+      - Includes ID, street address, and type (residential, commercial, etc.)
+
+Drivers table:
+
+      - Contains driver information
+      - Includes ID and first name of the driver
+
+Packages table:
+
+      - Holds package-related data
+      - Includes ID, contents, from_address_id, and to_address_id
+
+Scans table:
+
+      - Records scanning activities
+      - Includes ID, driver_id, package_id, address_id, action (Pick/Drop), and timestamp
+
+**3. Moneyball.db overview:**
+
+      - Stored in: "moneyball.db" database
+      - Focus: Baseball player and team performance analytics
+
+**Purpose:**
+
+      - Enables analysis of baseball player and team performance, including player statistics,
+        team details, player salaries, and game performances. The dataset facilitates insights into
+        the financial aspects of player contracts and their on-field contributions.
+
+**Tables:**
+
+Players table:
+
+      - Contains player details
+      - Includes ID, first_name, last_name, bats, throws, weight, height, debut, final_game, 
+        birth_year, birth_month, birth_day, birth_city, birth_state, and birth_country
+
+Teams table:
+
+      - Contains team details
+      - Includes ID, year, name, and park
+
+Performances table:
+
+      - Captures player performance data
+      - Includes ID, player_id, team_id, year, G (games played), AB (at bats), H (hits), 
+        2B (doubles), 3B (triples), HR (home runs), RBI (runs batted in), and SB (stolen bases)
+
+Salaries table:
+
+        - Stores salary information
+        - Includes ID, player_id, team_id, year, and salary in US dollars (not adjusted for inflation)
+   
+## Database
+SQLite, a lightweight and serverless relational database management system, serves as the foundation for managing and analyzing the datasets in this project. It offers portability, efficient querying, and a structured organization of data.
+
+## Utilized skills
+
+Throughout this project and the SQL queries discussed, I've used a comprehensive set of skills that highlight my proficiency in working with relational databases. Here's a comprehensive summary of the skills I've utilized:
+
+**1. Data Retrieval:**
+
+     - I can proficiently retrieve specific data from tables using **SELECT** statements.
+     - I've demonstrated the ability to select particular columns and apply conditions to filter results based on specific criteria.
+
+**2. JOIN Operations:**
+
+     - I've effectively used **JOIN** operations to combine data from multiple tables.
+
+**3. Subqueries:**
+
+     - I've demonstrated the use of subqueries to retrieve information by nesting queries.
+
+**4. NULL Handling:**
+
+     - I've successfully handled **NULL** values, recognizing their importance in 
+       identifying missing information or incomplete records within a database.
+
+**5. Data Analysis and Interpretation:**
+
+     - I can analyze data patterns and interpret results, evident in instances like recognizing misspelled addresses.
+
+**6. Log and Documentation:**
+
+     - I've adopted a best practice of maintaining detailed logs (**log.sql**) 
+       with comments for each query, ensuring a clear trail of my problem-solving approach.
+
+**7. Filtering with WHERE Clause:**
+
+     - I've effectively used the **WHERE** clause to filter results based on specific conditions in various queries.
+
+**8. Pattern Matching with LIKE:**
+
+     - I've utilized the **LIKE** operator for pattern matching, 
+     such as identifying names containing 'non-op' in the "districts" table.
+
+**9. Aggregate Functions (AVG, COUNT):**
+
+     - I've used aggregate functions such as **AVG** and **COUNT** for calculating averages and counting occurrences, 
+       showcasing proficiency in summarizing data.
+
+**10. GROUP BY and HAVING Clauses:**
+
+     - I've employed the **GROUP BY** clause to group results based on certain columns and used the **HAVING** clause 
+       to filter groups based on aggregate conditions.
+
+**11. ORDER BY and LIMIT Clauses:**
+
+     - I've effectively used the **ORDER BY** clause to sort query results and 
+       the **LIMIT** clause to restrict the number of returned rows.
+
+**12. Logical Thinking and Problem Solving:**
+
+     - I've demonstrated logical thinking and a systematic methodology in solving complex problems, 
+       breaking them down into manageable steps.
+
+**13. Mathematical Operations:**
+
+     - I've applied mathematical operations in calculations, such as dividing salary by hits to determine dollars per hit.
+
+**14. Understanding Database Schema:**
+
+     - I've showcased a solid understanding of the relationships within a database schema, 
+       involving tables such as addresses, packages, scans, drivers, schools, performances, salaries, teams, and more.
 
