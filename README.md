@@ -9,9 +9,8 @@ Feel free to explore the various projects and code snippets available here. Whet
 If you have any questions or suggestions, don't hesitate to reach out. Collaboration is always welcome!
 
 # Tech Stack
-![Microsoft Excel](https://img.shields.io/badge/-Microsoft%20Excel-217346?logo=microsoft%20excel&logoColor=white&style=for-the-badge)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge) ![MS SQL](https://img.shields.io/badge/-MS%20SQL-CC2927?logo=microsoft%20sql%20server&logoColor=white&style=for-the-badge) ![SQLite](https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=for-the-badge) ![R](https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=for-the-badge) ![Tableau](https://img.shields.io/badge/-Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge) ![MS Power BI](https://img.shields.io/badge/-MS%20Power%20BI-F2C811?logo=power%20bi&logoColor=white&style=for-the-badge) 
-
+![Microsoft Excel](https://img.shields.io/badge/-Microsoft%20Excel-217346?logo=microsoft%20excel&logoColor=white&style=for-the-badge) ![Oracle SQL](https://img.shields.io/badge/-Oracle%20SQL-F80000?logo=oracle&logoColor=white&style=for-the-badge) ![MS SQL](https://img.shields.io/badge/-MS%20SQL-CC2927?logo=microsoft%20sql%20server&logoColor=white&style=for-the-badge) ![SQLite](https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=for-the-badge)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge) ![R](https://img.shields.io/badge/-R-4B8BBE?logo=r&logoColor=white&style=for-the-badge) ![Python](https://img.shields.io/badge/-Python-4B8BBE?logo=python&logoColor=white&style=for-the-badge) ![Tableau](https://img.shields.io/badge/-Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge) ![MS Power BI](https://img.shields.io/badge/-MS%20Power%20BI-F2C811?logo=power%20bi&logoColor=white&style=for-the-badge) 
 
 # Table of Contents
 1. <a href="#project-1-global-covid-19-data-exploration-and-tableau-visualisation">Project 1: Global COVID-19 Data Exploration and Tableau Visualisation</a>
@@ -22,6 +21,9 @@ If you have any questions or suggestions, don't hesitate to reach out. Collabora
 
 3. <a href="#project-3-cs50-sql-relational-database-quering">Project 3: CS50 SQL Relational Database Quering</a>
 >This GitHub project is centered around developing SQL querying skills, particularly in the context of relational databases. The focus is on exploring and manipulating datasets related to educational systems in Massachusetts, baseball and package delivery data. The SQL queries showcase a spectrum of abilities, ranging from basic data retrieval to complex analyses involving multiple tables. Through this project, I've acquired proficiency in formulating queries for tasks such as filtering, joining tables, utilizing subqueries, handling NULL values, and performing aggregate functions. The skills demonstrated here lay a foundation for effective data analysis and interpretation in relational database environments.
+
+4. <a href="#project-4-cs50-sql-designing-schemas">Project 4: CS50 SQL Designing Schemas</a>
+>Completing this project enhanced my understanding of database schema design with SQLite. I crafted a Boston Subway System Database schema, emphasizing normalization and many-to-many relationships. Hands-on experience included creating tables with the CREATE TABLE query, understanding data types, and using type affinities. I grasped essential concepts of table constraints like PRIMARY KEY and FOREIGN KEY, as well as column constraints such as NOT NULL, UNIQUE, and CHECK. The lecture's practical examples facilitated a deeper understanding of altering tables, including adding, renaming and dropping columns. Overall, this project provided a concise yet solid foundation in designing databases and crafting effective schemas using SQL.
 
 
 # [Project 1: Global COVID-19 Data Exploration and Tableau Visualisation](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%201%20-%20SQL%20and%20Tableau)
@@ -2067,3 +2069,76 @@ Throughout this project and the SQL queries discussed, I've used a comprehensive
      - I've showcased a solid understanding of the relationships within a database schema, 
        involving tables such as addresses, packages, scans, drivers, schools, performances, salaries, teams, and more.
 
+
+# [Project 4: CS50 SQL Designing Schemas](https://github.com/KamilKozera/business-intelligence-portfolio/tree/main/Project%204%20-%20CS50%20SQL%20Designing%20Schemas)
+
+## Project Structure
+
+```
+Project 4 - CS50 SQL Designing Schemas
+ ├── atl 
+     ├── schema.sql 
+     ├── atl.db 
+ ├── connect 
+     ├── schema.sql 
+     ├── connect.db 
+ ├── donuts 
+     ├── schema.sql 
+     ├── donuts.db 
+```
+
+## Problem sets
+
+**1. ATL:**
+
+Hartsfield-Jackson International Airport, perhaps better known as “ATL” for its IATA airport code, has been the busiest airport in the world since 1998. Located in Atlanta, Georgia in the United States, ATL served 93.7 million passengers in 2022. Maybe you were one of them!
+
+Suppose you’ve just been hired to help ATL re-design their database system. In a file called schema.sql in a folder called atl, write a set of SQL statements to design a database with which Hartsfield-Jackson could keep track of its passengers and their flights.
+
+**2. LinkedIn:**
+
+LinkedIn is “the world’s largest professional network” with a mission to “connect the world’s professionals to make them more productive and successful.” Perhaps you have an account? On the platform, users can post their professional experience (i.e., past jobs, education, etc.) and make connections with other people they’ve met, in-person or online.
+
+In a file called schema.sql in a folder called connect, write a set of SQL statements to design a database LinkedIn could use.
+
+**3. Union Square Donuts:**
+
+Around Boston, Brookline, and Somerville, you might catch sight of Union Square Donuts, a shop famous in the area for its delicious confections. Suppose that Union Square Donuts has been around for a while and, while their paper receipts have worked well so far, they’re hoping for a system to help them handle more customers. In fact, they’ve just hired you to design a database fitting for their shop. In exchange, free donuts? 🍩
+
+In a file called schema.sql in a folder called donuts, write a set of SQL statements to create a database that Union Square Donuts could use to manage their day-to-day operations.
+
+## Utilized skills
+
+Throughout this project and the SQL queries discussed, I've used a comprehensive set of skills that highlight my proficiency in working with relational databases. Here's a comprehensive summary of the skills I've utilized:
+
+**1. SQL Proficiency:**
+
+- Applied commands to create tables, define data types, and establish constraints and relationships.
+
+**2. Data Modeling:**
+
+- Developed diverse tables for entities such as ingredients, recipes, donuts, orders, customers, users, schools, companies, passengers, airlines, flights, and check-ins
+
+**3. Normalization Techniques:**
+
+- Implemented primary keys, foreign keys, and adhered to normalization principles for efficient data organization and avoidance of redundancies.
+
+**4. Constraint Implementation:**
+
+- Applied constraints such as NOT NULL, CHECK, UNIQUE, and DEFAULT CURRENT_TIMESTAMP to ensure data integrity.
+
+**5. Data Validation:**
+
+- Demonstrated commitment to high data quality standards through careful validation, including checks like "age" > 0 and "establishment_year" > 0.
+
+**6. Time and Date Handling:**
+
+- Considered effective time and date handling with the use of NUMERIC data type and DEFAULT CURRENT_TIMESTAMP for timestamp columns.
+
+**7. Relationship Establishment:**
+
+- Established relationships between tables using FOREIGN KEY constraints, facilitating data consistency and integrity.
+
+**8. Understanding of Joins:**
+
+- Indicated awareness of how to perform joins for querying and retrieving related data through the inclusion of foreign keys and relationships.
